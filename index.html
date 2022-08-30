@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign up Form</title>
 </head>
 <body>
     <div class="box-1">
         <div class="img-box">
-            <img src="images/sarah-hu-Cl-LTkrsZnk-unsplash.jpg" alt="waterfall image">
+            <img src="images/sarah-hu-Cl-LTkrsZnk-unsplash.jpg" alt="waterfall image" class="background-img">
+            <div class="logo-background">
+                <img src="images/odin-lined.png" alt="odin logo" class="odin-logo norse-bold">
+                <div class="odin">ODIN</div>
+            </div>
+            <div class="credit"><div>Photo by  <a href="https://unsplash.com/@huhara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Sarah Hu </a> on <a href="https://unsplash.com/"> Unsplash </a></div></div>
         </div>
-        <form method="GET" action="">
+        <form method="GET" action="#">
             <div class="intro-box">
-                <div class="intro-1">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams. Sign up now to get started.</div>
+                <div class="intro-1">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams. Sign up  <i>now</i> to get started.</div>
                 <div class="intro-2">You know you want to!</div>
             </div>
             <div class="form-box">
@@ -23,38 +29,39 @@
                 </div>
                 <div class="row">
                     <div class="option">
-                        <label for="">FIRST NAME</label>
-                        <input type="text">
+                        <label for="firstName">FIRST NAME</label>
+                        <input name="firstName" type="text" required>
                     </div>
                     <div class="option">
-                        <label for="">LAST NAME</label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="option">
-                        <label for="">EMAIL</label>
-                        <input type="email">
-                    </div>
-                    <div class="option">
-                        <label for="">PHONE NUMBER</label>
-                        <input type="tel">
+                        <label for="lastName">LAST NAME</label>
+                        <input name="lastName" type="text" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="option">
-                        <label for="">PASSWORD</label>
-                        <input type="password">
+                        <label for="email">EMAIL</label>
+                        <input name="email" type="email" required>
                     </div>
                     <div class="option">
-                        <label for="">CONFIRM PASSWORD</label>
-                        <input type="password">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input name="tel" type="tel" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="option">
+                        <label for="password">PASSWORD</label>
+                        <input name="password" type="password" class="error" required>
+                        <div class="error-msg">* Password do not match</div>
+                    </div>
+                    <div class="option">
+                        <label for="passConf">CONFIRM PASSWORD</label>
+                        <input name="passConf" type="password" class="error" required>
                     </div>
                 </div>
             </div>
-            <div class="intro-box">
-                <div class="intro-1">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams. Sign up now to get started.</div>
-                <div class="intro-2">You know you want to!</div>
+            <div class="submit-box">
+                <button>Create Account</button>
+                <div class="info-3">Already have an account? <a href="#" class="login">Log in</a></div>
             </div>
 
 
